@@ -1,0 +1,25 @@
+Please Follw the instruction below to run the case is explains about the procedure to run the case.
+
+1) Change the scripts as executables using the following. Execute the below commands one by one. This has to done only once during the first run.
+
+"
+chmod +x run setup clean
+ 
+"
+
+2) use "setup" file in this directory to import mesh and split into regions 
+
+"./setup"
+
+3) use "run" file to run the case
+
+"./run"
+
+4) use 'paraFoam -touch-all' to create post process file for each region. Then
+use paraview to open all the regions created by the previous command to visulaize.
+or Using "load state" option in file menu and load the file "postProcess.pvsm" to visualize
+
+5) use "clean" file to clean the case
+
+"./clean"
+
